@@ -1,10 +1,7 @@
 body {
   margin: 0;
   height: 100vh;
-  /*display: flex;
-  /*justify-content: center;
-  align-items: start;
-*/
+
   background-color: #6e6e6e;
 }
 
@@ -18,9 +15,9 @@ form {
   justify-content: space-between;
 }
 
-
 .field-select {
-  outline: 2px dotted pink;
+  /*контейнер для каждого select*/
+  outline: 1px solid pink;
 
   position: relative;
   margin-top: 10px;
@@ -30,9 +27,8 @@ form {
   user-select: none;
 }
 
-/*стили для шапки(заголовка): .field-select__title*/
 .field-select__title {
-  outline: 1px dotted red;
+  /*стили для шапки(заголовка) .field-select__title*/
 
   position: relative;
   display: block;
@@ -40,8 +36,8 @@ form {
   cursor: pointer;
 }
 
-
 .field-select__title--hide {
+  /*этот класс скрывает шапку(заголовок) до начала работы скрипта*/
   display: none;
 }
 
@@ -57,8 +53,8 @@ form {
   position: absolute;
   top: 50%;
   right: 0;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   background-image: url("bg-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -73,6 +69,7 @@ form {
   transition: transform 0.4s;
 }
 
+/*стили для блока с контентом(option)*/
 .field-select__content {
   position: absolute;
   top: 100%; /*если нужно открывание ВВЕРХ, указать bottom: 0;*/
@@ -110,16 +107,14 @@ form {
 }
 
 .field-select__label {
-  outline: 1px dotted green;
-
   position: relative;
   display: block;
   padding: 5px 20px;
   cursor: pointer;
 
-  background: rgba(202, 200, 192);
+  border: 1px solid darkblue;
+  background: #cac8c0;
 }
-
 
 /*стилизация состояний*/
 .field-select__label:hover {
