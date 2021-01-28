@@ -5,12 +5,12 @@ body {
   background-color: #6e6e6e;
 }
 
-form {
+.form-select {
   outline: 1px dotted yellow;
   padding: 20px;
 }
 
-.form__wrapper {
+.form-select__wrapper {
   display: flex;
   justify-content: space-between;
 }
